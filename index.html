@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAJUSAKAYU STORE — Top Up Diamond Free Fire Resmi & Instan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .hero-card {
+      position: relative !important;
+      overflow: hidden !important;
+    }
+
+    .banner-bg {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center !important;
+      opacity: 0.12 !important;
+      pointer-events: none !important;
+      z-index: 1 !important;
+    }
+
+    .hero-content, .hero-visual {
+      position: relative !important;
+      z-index: 2 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="brand">
+        <div class="brand-icon"><img src="image/image1.jpg" alt=""></div>
+        <div>
+          <span class="brand-title">RAJUSAKAYU<span class="text-accent">STORE</span></span>
+          <span class="brand-badge">Official Partner</span>
+        </div>
+      </a>
+      <button type="button" class="btn btn-outline" id="btnOpenHistory">
+        Cek Transaksi
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero">
+    <div class="container hero-card">
+      <img src="image/image2.jpg" alt="Background" class="banner-bg">
+      <div class="hero-content">
+        <span class="hero-tag">⚡ Proses Otomatis 10-20 Detik • 24 Jam</span>
+        <h1>Top Up Diamond Free Fire</h1>
+        <p>Masukkan Player ID, pilih nominal diamond atau membership, dan selesaikan pembayaran dengan aman.</p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="diamond-showcase">
+          <span class="diamond-emoji">💎</span>
+          <div>
+            <strong>100% Legal & Aman</strong>
+            <small>Cukup pakai Player ID tanpa login akun</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="container main-layout">
+    <div class="steps-column">
+
+      <!-- LANGKAH 1: PLAYER ID -->
+      <section class="card step-card">
+        <div class="step-header">
+          <span class="step-number">1</span>
+          <h2>Masukkan Player ID</h2>
+          <button type="button" class="btn-help" id="btnOpenGuide" title="Cara menemukan Player ID">?</button>
+        </div>
+        <div class="id-input-group">
+          <input
+            type="text"
+            id="playerIdInput"
+            class="form-input"
+            placeholder="Contoh: 1234567890"
+            inputmode="numeric"
+            maxlength="12"
+          />
+          <button type="button" class="btn btn-primary" id="btnCheckId">Cek ID</button>
+        </div>
+        <div id="nicknameBox" class="nickname-result hidden"></div>
+        <p class="helper-text">Klik ikon profil di pojok kiri atas lobi Free Fire untuk menyalin Player ID kamu.</p>
+      </section>
+
+      <!-- LANGKAH 2: NOMINAL TOP UP (SUDAH DITULIS LANGSUNG DI HTML) -->
+      <section class="card step-card">
+        <div class="step-header">
+          <span class="step-number">2</span>
+          <h2>Pilih Nominal Top Up</h2>
+        </div>
+
+        <div class="filter-tabs" id="categoryTabs">
+          <button type="button" class="tab-btn active" data-filter="all">Semua</button>
+          <button type="button" class="tab-btn" data-filter="diamond">Diamond</button>
+          <button type="button" class="tab-btn" data-filter="membership">Membership</button>
+        </div>
+
+        <div class="items-grid" id="itemsGrid">
+          <div class="item-card" data-id="d5">
+            <div class="item-icon">💎</div>
+            <div class="item-name">5 Diamonds</div>
+            <div class="item-bonus">&nbsp;</div>
+            <div class="item-price">Rp 1.000</div>
+          </div>
+
+          <div class="item-card" data-id="d12">
+            <div class="item-icon">💎</div>
+            <div class="item-name">12 Diamonds</div>
+            <div class="item-bonus">+1 Bonus</div>
+            <div class="item-price">Rp 2.000</div>
+          </div>
+
+          <div class="item-card" data-id="d50">
+            <div class="item-icon">💎</div>
+            <div class="item-name">50 Diamonds</div>
+            <div class="item-bonus">+5 Bonus</div>
+            <div class="item-price">Rp 7.500</div>
+          </div>
+
+          <div class="item-card" data-id="d70">
+            <span class="item-badge">Populer</span>
+            <div class="item-icon">💎</div>
+            <div class="item-name">70 Diamonds</div>
+            <div class="item-bonus">+7 Bonus</div>
+            <div class="item-price">Rp 10.000</div>
+          </div>
+
+          <div class="item-card" data-id="d140">
+            <span class="item-badge">Best Seller</span>
+            <div class="item-icon">💎</div>
+            <div class="item-name">140 Diamonds</div>
+            <div class="item-bonus">+14 Bonus</div>
+            <div class="item-price">Rp 19.500</div>
+          </div>
+
+          <div class="item-card" data-id="d355">
+            <div class="item-icon">💎</div>
+            <div class="item-name">355 Diamonds</div>
+            <div class="item-bonus">+35 Bonus</div>
+            <div class="item-price">Rp 48.000</div>
+          </div>
+
+          <div class="item-card" data-id="d720">
+            <span class="item-badge">Hemat</span>
+            <div class="item-icon">💎</div>
+            <div class="item-name">720 Diamonds</div>
+            <div class="item-bonus">+72 Bonus</div>
+            <div class="item-price">Rp 96.000</div>
+          </div>
+
+          <div class="item-card" data-id="d1450">
+            <div class="item-icon">💎</div>
+            <div class="item-name">1450 Diamonds</div>
+            <div class="item-bonus">+145 Bonus</div>
+            <div class="item-price">Rp 192.000</div>
+          </div>
+
+          <div class="item-card" data-id="m1">
+            <span class="item-badge">Favorit</span>
+            <div class="item-icon">👑</div>
+            <div class="item-name">Membership Mingguan</div>
+            <div class="item-bonus">Total 450 DM</div>
+            <div class="item-price">Rp 28.500</div>
+          </div>
+
+          <div class="item-card" data-id="m2">
+            <span class="item-badge">Super Hemat</span>
+            <div class="item-icon">👑</div>
+            <div class="item-name">Membership Bulanan</div>
+            <div class="item-bonus">Total 2600 DM</div>
+            <div class="item-price">Rp 85.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LANGKAH 3: METODE PEMBAYARAN (SUDAH DITULIS LANGSUNG DI HTML) -->
+      <section class="card step-card">
+        <div class="step-header">
+          <span class="step-number">3</span>
+          <h2>Pilih Metode Pembayaran</h2>
+        </div>
+
+        <div class="payment-list" id="paymentList">
+          <div class="payment-card" data-id="qris">
+            <div>
+              <span class="payment-type">QRIS</span>
+              <div class="payment-name">QRIS (Semua E-Wallet & M-Banking)</div>
+            </div>
+            <div class="payment-price">+ Rp 500</div>
+          </div>
+
+          <div class="payment-card" data-id="dana">
+            <div>
+              <span class="payment-type">E-Wallet</span>
+              <div class="payment-name">DANA</div>
+            </div>
+            <div class="payment-price">+ Rp 1.000</div>
+          </div>
+
+          <div class="payment-card" data-id="gopay">
+            <div>
+              <span class="payment-type">E-Wallet</span>
+              <div class="payment-name">GoPay</div>
+            </div>
+            <div class="payment-price">+ Rp 1.000</div>
+          </div>
+
+          <div class="payment-card" data-id="ovo">
+            <div>
+              <span class="payment-type">E-Wallet</span>
+              <div class="payment-name">OVO</div>
+            </div>
+            <div class="payment-price">+ Rp 1.000</div>
+          </div>
+
+          <div class="payment-card" data-id="bca">
+            <div>
+              <span class="payment-type">Virtual Account</span>
+              <div class="payment-name">BCA Virtual Account</div>
+            </div>
+            <div class="payment-price">+ Rp 2.500</div>
+          </div>
+
+          <div class="payment-card" data-id="bri">
+            <div>
+              <span class="payment-type">Virtual Account</span>
+              <div class="payment-name">BRI Virtual Account</div>
+            </div>
+            <div class="payment-price">+ Rp 2.500</div>
+          </div>
+
+          <div class="payment-card" data-id="alfamart">
+            <div>
+              <span class="payment-type">Minimarket</span>
+              <div class="payment-name">Alfamart / Indomaret</div>
+            </div>
+            <div class="payment-price">+ Rp 3.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LANGKAH 4: PROMO & KONTAK -->
+      <section class="card step-card">
+        <div class="step-header">
+          <span class="step-number">4</span>
+          <h2>Kode Promo & Kontak</h2>
+        </div>
+        <div class="promo-section">
+          <label for="promoInput" class="form-label">Kode Promo (Opsional)</label>
+          <div class="promo-input-group">
+            <input
+              type="text"
+              id="promoInput"
+              class="form-input"
+              placeholder="Contoh kode: BOOYAH10"
+            />
+            <button type="button" class="btn btn-secondary" id="btnApplyPromo">Gunakan</button>
+          </div>
+          <p id="promoFeedback" class="promo-feedback hidden"></p>
+        </div>
+
+        <div class="contact-section">
+          <label for="waInput" class="form-label">Nomor WhatsApp</label>
+          <input
+            type="tel"
+            id="waInput"
+            class="form-input"
+            placeholder="0812xxxxxxxx"
+          />
+          <p class="helper-text">Bukti transaksi dan status pengiriman akan dikirim ke nomor ini.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- RINGKASAN PESANAN -->
+    <aside class="summary-column">
+      <div class="card summary-card">
+        <h3>Ringkasan Pesanan</h3>
+
+        <div class="summary-rows">
+          <div class="summary-row">
+            <span>Player ID</span>
+            <strong id="sumPlayerId">-</strong>
+          </div>
+          <div class="summary-row">
+            <span>Nickname</span>
+            <strong id="sumNickname" class="text-gold">-</strong>
+          </div>
+          <div class="summary-row">
+            <span>Item Dipilih</span>
+            <strong id="sumItem">Belum dipilih</strong>
+          </div>
+          <div class="summary-row">
+            <span>Pembayaran</span>
+            <strong id="sumPayment">Belum dipilih</strong>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="summary-rows">
+          <div class="summary-row">
+            <span>Harga Item</span>
+            <span id="sumBasePrice">Rp 0</span>
+          </div>
+          <div class="summary-row">
+            <span>Biaya Admin</span>
+            <span id="sumAdminFee">Rp 0</span>
+          </div>
+          <div class="summary-row discount-row hidden" id="discountRow">
+            <span>Diskon Promo</span>
+            <span id="sumDiscount">-Rp 0</span>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="summary-total">
+          <span>Total Bayar</span>
+          <strong id="sumTotal">Rp 0</strong>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-full" id="btnCheckout">
+          Beli Sekarang
+        </button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- MOBILE CHECKOUT BAR -->
+  <div class="mobile-checkout-bar">
+    <div>
+      <small>Total Pembayaran</small>
+      <strong id="mobileTotal">Rp 0</strong>
+    </div>
+    <button type="button" class="btn btn-primary" id="btnMobileCheckout">Beli Sekarang</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 RAJUSAKAYU STORE. Layanan Top Up Diamond Free Fire Cepat, Aman, dan Terpercaya.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL 1: PANDUAN PLAYER ID -->
+  <div class="modal-backdrop hidden" id="modalGuide">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Cara Menemukan Player ID</h3>
+        <button type="button" class="modal-close" data-close="modalGuide">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="guide-illustration">
+          <div class="guide-profile-mock">
+            <div class="avatar-mock">😎</div>
+            <div>
+              <strong>bsk*ayaM</strong>
+              <span class="id-badge-mock">ID: 1234567890 📋</span>
+            </div>
+          </div>
+        </div>
+        <ol class="guide-steps">
+          <li>Buka aplikasi game <strong>Free Fire</strong> di perangkat kamu.</li>
+          <li>Klik banner <strong>Profil</strong> di pojok kiri atas layar lobi.</li>
+          <li>Salin deretan angka <strong>UID / Player ID</strong> di bawah nickname kamu.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: KONFIRMASI PESANAN -->
+  <div class="modal-backdrop hidden" id="modalConfirm">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Konfirmasi Pesanan</h3>
+        <button type="button" class="modal-close" data-close="modalConfirm">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">Pastikan data akun dan item sudah sesuai sebelum melanjutkan pembayaran.</p>
+        <div class="confirm-box" id="confirmDetails"></div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-outline" data-close="modalConfirm">Ubah</button>
+          <button type="button" class="btn btn-primary" id="btnConfirmPay">Lanjut Bayar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: INVOICE & PEMBAYARAN -->
+  <div class="modal-backdrop hidden" id="modalInvoice">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Selesaikan Pembayaran</h3>
+        <button type="button" class="modal-close" data-close="modalInvoice">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="invoice-top">
+          <div>
+            <small>Nomor Invoice</small>
+            <strong id="invNumber">INV-FF-000000</strong>
+          </div>
+          <div class="countdown-badge" id="invTimer">15:00</div>
+        </div>
+
+        <div class="payment-instruction" id="paymentInstructionBox">
+          <div class="qris-mock" style="text-align: center;">
+            <img src="image/qris.jpeg" alt="Rizqi Kembang" style="width: 220px; height: 220px; display: block; margin: 10px auto; border: 4px solid #fff; border-radius: 8px; object-fit: contain;">
+            <small style="color: #a0aec0; font-size: 0.85rem; display: block; margin-top: 8px;">Scan kode QR di atas menggunakan aplikasi E-Wallet atau M-Banking</small>
+          </div>
+        </div>
+
+        <div class="invoice-total-box">
+          <span>Total Transfer</span>
+          <strong id="invTotalAmount">Rp 0</strong>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-full" id="btnSimulatePaid">
+          Simulasi Bayar Sekarang
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 4: TRANSAKSI BERHASIL -->
+  <div class="modal-backdrop hidden" id="modalSuccess">
+    <div class="modal-box text-center">
+      <div class="success-icon">✓</div>
+      <h3>Pembayaran Berhasil!</h3>
+      <p class="modal-desc">Diamond telah dikirim otomatis ke akun Free Fire kamu.</p>
+      <div class="confirm-box text-left" id="receiptDetails"></div>
+      <button type="button" class="btn btn-primary btn-full" data-close="modalSuccess">Selesai</button>
+    </div>
+  </div>
+
+  <!-- MODAL 5: RIWAYAT TRANSAKSI -->
+  <div class="modal-backdrop hidden" id="modalHistory">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Riwayat Transaksi</h3>
+        <button type="button" class="modal-close" data-close="modalHistory">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="historyList" class="history-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+</body>
+</html>
